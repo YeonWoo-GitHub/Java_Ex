@@ -2,10 +2,10 @@ package dependencyEx;
 
 public class Paper {
 
-    private Pen pen;
+    private final Pen pen;
 
-    public Paper() {
-        pen = new Pen();
+    public Paper(Pen pen) {
+        this.pen = pen;
     }
 
     public void draw() {
